@@ -15,7 +15,7 @@ def call() {
         STAGE = env.STAGE_NAME
         println "Stage: ${env.STAGE_NAME}"
     }
-    stage('Nexus') {
+    stage('Nexus ') {
         STAGE = env.STAGE_NAME
         println "Stage: ${env.STAGE_NAME}"
     }
