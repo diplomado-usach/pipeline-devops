@@ -14,10 +14,11 @@ def call() {
                 steps {
                     script {
                         println params.buildTool
+                        println params.stage
                         if (params.buildTool == 'gradle') {
-                            gradle(stage)
+                            gradle(params.stage)
                         } else {
-                            maven(stage)
+                            maven(params.stage)
                         }
                     }
                 }
